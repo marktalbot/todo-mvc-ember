@@ -1,0 +1,13 @@
+<h4>Todos:</h4>
+<form action="">
+    <input name="title" type="text">
+    {{!-- <button onclick={{action 'add'}}>Add Todo</button> --}}
+    <button>Add Todo</button>
+</form>
+<ul>
+    {{#each todos as |todo|}}
+        <li>{{todo.title}} | Done: {{todo.isComplete}}</li>
+    {{/each}}
+</ul>
+<p>Temp:</p>
+{{todo-item}}
